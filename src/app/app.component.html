@@ -1,4 +1,10 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-array></app-array>
+<button (click)="onDispLastName()">Afficher les noms</button>
+<button (click)="onDispFirstName()">Afficher les prénoms</button>
+<ul>
+  <li *ngFor="let ln of lastName">{{ ln }}</li>
+</ul>
+<ul>
+  <li *ngFor="let fn of firstName">{{ fn }}</li>
+</ul>

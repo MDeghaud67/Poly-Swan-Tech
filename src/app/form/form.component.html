@@ -1,4 +1,6 @@
 <label for="lastName">Nom: </label>
-<input type="text" [(ngModel)]="lastName" />
+<input type="text" [(ngModel)]="lastName" #ln />
+<button (click)="onDispLastName(ln.value)">Afficher les noms</button>
 <label for="firstName">Prénom: </label>
-<input type="text" [(ngModel)]="firstName" />
+<input type="text" [(ngModel)]="firstName" #fn />
+<button (click)="onDispFirstName(fn.value)">Afficher les prénoms</button>

@@ -11,12 +11,12 @@ export class AppComponent {
   firstName = [];
   lastName = [];
   form: FormComponent = new FormComponent();
-  onDispFirstName() {
-    //this.firstName.push(this.form.firstName);
-    console.log(this.form.firstName);
+  onDispFirstName(fn: string) {
+    this.firstName.push(fn);
+    console.log('Prénom: ', this.firstName);
   }
-  onDispLastName() {
-    //this.lastName.push(this.form.lastName);
-    console.log(this.form.lastName);
+  onDispLastName(ln: string) {
+    this.lastName.push(ln);
+    console.log('Nom: ', this.lastName);
   }
 }
